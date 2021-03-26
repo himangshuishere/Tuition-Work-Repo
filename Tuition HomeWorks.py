@@ -84,7 +84,7 @@ if choiceInput == 1:
     if a == b == c:
         name = "Equilateral"
     
-    if a == b != c:
+    if a == b != c or a != b == c or a == c != b:
         name = "Isosceles"
     
     if a != b != c:
@@ -99,7 +99,7 @@ if choiceInput == 2:
     if a == b == c:
         name = "Equilateral"
     
-    if a == b != c:
+    if a == b != c or a != b == c or a == c != b:
         name = "Isosceles"
     
     if a != b != c:
@@ -111,7 +111,7 @@ if choiceInput == 2:
 """
 Q.6.Test whether a given character is uppercase or lowercase letter using its ASCII value
 """
-userChar = input("Enter a character: ")
+userChar = input("Enter a letter: ")
 
 if ord(userChar) >= 65 and ord(userChar) <= 90:
     print(f"{userChar} is an UpperCase Character according to ASCII test.")
